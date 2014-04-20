@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<plugin id="Gnumeric_JkFuncPlugin">
+  <information>
+    <name>Functions must be functions</name>
+    <description>https://bugzilla.gnome.org/show_bug.cgi?id=728611</description>
+  </information>
+  <loader type="Gnumeric_PythonLoader:python">
+    <attribute name="module_name" value="functions_must_be"/>
+  </loader>
+  <services>
+    <service type="function_group" id="functions_must_be">
+      <category>Local Python</category>
+      <functions>
+        <function name="function" />
+        <function name="other_callable" />
+      </functions>
+    </service>
+  </services>
+</plugin>
