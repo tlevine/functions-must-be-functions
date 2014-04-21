@@ -11,7 +11,7 @@
     <service type="function_group" id="functions_must_be">
       <category>Local Python</category>
       <functions>
-        <function name="type" />
+        <function name="python_type" />
         <function name="function" />
         <function name="other_callable" />
       </functions>
